@@ -1,0 +1,37 @@
+a {
+  color: tomato;
+}
+
+body {
+  font-style: tahoma;
+}
+
+.main {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head"
+                        "nav main"
+                        "nav foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+.main > header {
+  grid-area: head;
+  background-color: orange;
+}
+
+.main > nav {
+  grid-area: nav;
+  background-color: aquamarine;
+}
+
+.main > main {
+  grid-area: main;
+  background-color: blue;
+}
+
+.main > footer {
+  grid-area: foot;
+  background-color: rebeccapurple;
+}
